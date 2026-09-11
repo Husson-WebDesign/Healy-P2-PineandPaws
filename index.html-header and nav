@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pine and Paws Pet Grooming</title>
+</head>
+
+<body>
+<Header>
+    <h1>Pine and Paw Pet Grooming</h1>
+    <p>At Pine & Paws Pet Grooming, every pet is treated with patience, care, and respect. Our goal is to make grooming as comfortable as possible while helping pets look and feel their best. 
+        From routine bathing and brushing to full grooming appointments, our staff takes the time to understand each pet's individual needs. </p>
+</Header>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</body>
+</html>
+<h1>Web Design Client Project</h1>
+<p>Developer: Eleanor Healy</p>
+<p>This website is being developed as part of my Web Design course.</p>
+<p>Project setup completed successfully.</p>
