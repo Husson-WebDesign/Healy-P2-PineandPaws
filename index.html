@@ -1,92 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pine and Paws Pet Grooming</title>
-</head>
 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pine & Paws Pet Grooming | Gentle & Professional Care in Bangor, ME</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<Header>
-    <h1>Pine and Paw Pet Grooming</h1>
-    <p>Gentle care. Professional grooming. Happier pets.</p>
-</Header>
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-<img
-    src="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    alt="Dog being groomed">
-</nav>
-<main>
-<section id="home">
-    <h2>The salon provides professional grooming services in a clean, calm, and safety-focused environment.</h2>
-   <p>
-    The business was created around the idea that grooming should be more than simply improving a pet's appearance. Grooming should also support coat health, comfort, hygiene, and the overall well-being of the animal.
-   </p>
-   <a href="#services">Explore Our Services</a>
-</section>
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Pine & Paws Pet Grooming was established to provide local pet owners with professional grooming in an environment built around patience, cleanliness, and respectful animal handling.
-    </p>
-    <p>
-       The salon recognizes that pets respond differently to grooming. Some pets are comfortable immediately, while others may need additional time and reassurance.
-    </p>
-</section>
-<section id="services">
-    <h2>Our Services</h2>
-    <article>
-        <h3>Bath and Brush</h3>
-        <p>
-           A complete bathing and brushing service designed to clean the coat, remove loose fur, and leave pets feeling fresh and comfortable.
-           **Starting Price:** $35
-        </p>
-    </article>
-    <article>
-        <h3>Full Groom</h3>
-        <p>
-            A complete grooming service that includes bathing, brushing, coat trimming, nail care, ear cleaning, and finishing.
-            **Starting Price:** $55
-        </p>
-    </article>
-    <article>
-        <h3>Puppy Introduction</h3>
-        <p>
-            A gentle introductory grooming appointment designed to help puppies become comfortable with grooming equipment, handling, sounds, and the salon environment.
-            **Starting Price:** $30
-        </p>
-    </article>
-</section>
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Feel free to call or text with any questions, or stop by in person. You can book apointments online over the phone or in person.
-    </p>
-    <a 
-        href="rachel@pineandpaws.com"></a>
-        Contact Us - 207-555-0102    
-        12 maine st., Bangor, Maine. 
-        Business hours - **Monday:** Closed
-        **Tuesday-Friday:** 8:00 AM-5:30 PM
-        **Saturday:** 8:00 AM-4:00 PM
-        **Sunday:** Closed
-</section>
-</main>
-<footer>
-    <p>
-        &copy; 2026 Pine and Paw Grooming
-        All rights reserved.
-    </p>
-</footer>
+
+
+   <header class="site-header">
+       <div class="container header-container">
+           <a href="index.html" class="brand-logo">
+               <div>
+                   <span class="logo-text">Pine & Paws</span>
+                   <span class="logo-tagline">Pet Grooming</span>
+               </div>
+           </a>
+           <nav class="main-nav">
+               <ul>
+                   <li><a href="index.html" class="active">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="services.html">Services</a></li>
+                   <li><a href="pet-care.html">Pet Care</a></li>
+                   <li><a href="book.html">Book an Appointment</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+
+   <main>
+       <section class="hero" id="home">
+           <div class="container hero-grid">
+               <div class="hero-content">
+                   <h1>Pine & Paws Pet Grooming</h1>
+                   <p class="lead">Gentle care. Professional grooming. Happier pets.</p>
+                   <p>
+                       At Pine & Paws Pet Grooming, every pet is treated with patience, care, and respect. Our goal is to make grooming as comfortable as possible while helping pets look and feel their best. From routine bathing and brushing to full grooming appointments, our staff takes the time to understand each pet's individual needs.
+                   </p>
+                   <div class="hero-actions">
+                       <a href="book.html" class="button button-accent">Request an Appointment</a>
+                       <a href="services.html" class="button button-outline">Explore Our Services</a>
+                   </div>
+               </div>
+               <div class="hero-image">
+                   <img src="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?q=80&w=1170&auto=format&fit=crop" alt="Dog being gently groomed at Pine & Paws Pet Grooming">
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section">
+           <div class="container">
+               <div class="safety-callout">
+                   <h3>Our Commitment to Pet Safety</h3>
+                   <p>The comfort and safety of every pet comes first. Grooming services may be modified or stopped if continuing could cause excessive stress or create a safety concern for the pet or grooming staff.</p>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section section-alt" id="services">
+           <div class="container">
+               <div class="section-title">
+                   <h2>Featured Grooming Services</h2>
+                   <p>Professional care tailored to your pet's individual needs</p>
+               </div>
+              
+               <div class="card-grid">
+                   <article class="card service-card">
+                       <div class="service-card-header">
+                           <h3>Bath & Brush</h3>
+                           <span class="badge">From $35</span>
+                       </div>
+                       <p>A complete bathing and brushing service designed to clean the coat, remove loose fur, and leave pets feeling fresh and comfortable.</p>
+                       <div class="service-meta"><strong>Starting Price:</strong> $35</div>
+                   </article>
+
+
+                   <article class="card service-card">
+                       <div class="service-card-header">
+                           <h3>Full Groom</h3>
+                           <span class="badge">From $55</span>
+                       </div>
+                       <p>A complete grooming service that includes bathing, brushing, coat trimming, nail care, ear cleaning, and finishing.</p>
+                       <div class="service-meta"><strong>Starting Price:</strong> $55</div>
+                   </article>
+
+
+                   <article class="card service-card">
+                       <div class="service-card-header">
+                           <h3>Puppy Introduction</h3>
+                           <span class="badge">From $30</span>
+                       </div>
+                       <p>A gentle introductory grooming appointment designed to help puppies become comfortable with grooming equipment, handling, sounds, and the salon environment.</p>
+                       <div class="service-meta"><strong>Starting Price:</strong> $30</div>
+                   </article>
+               </div>
+           </div>
+       </section>
+
+
+       <section class="section" id="contact">
+           <div class="container">
+               <div class="section-title">
+                   <h2>Visit or Contact Us</h2>
+                   <p>Appointments are required for all grooming services.</p>
+               </div>
+
+
+               <div class="card">
+                   <ul class="contact-info-list">
+                       <li class="contact-info-item">
+                           <strong>Phone:</strong> 207-555-0102
+                       </li>
+                       <li class="contact-info-item">
+                           <strong>Email:</strong> rachel@pineandpaws.example
+                       </li>
+                       <li class="contact-info-item">
+                           <strong>Location:</strong> 12 Maine St., Bangor, Maine
+                       </li>
+                       <li class="contact-info-item">
+                           <strong>Hours:</strong> Mon: Closed | Tue–Fri: 8:00 AM–5:30 PM | Sat: 8:00 AM–4:00 PM | Sun: Closed
+                       </li>
+                   </ul>
+                   <a href="book.html" class="button button-accent">Request an Appointment</a>
+               </div>
+           </div>
+       </section>
+   </main>
+
+
+   <footer class="site-footer">
+       <div class="container footer-grid">
+           <div class="footer-col">
+               <h3>Pine & Paws</h3>
+               <p>Gentle care. Professional grooming. Happier pets.</p>
+               <p>Grooming services are not a substitute for veterinary care. Customers should contact a licensed veterinarian regarding medical concerns, injuries, unusual skin conditions, or other health issues.</p>
+           </div>
+           <div class="footer-col">
+               <h4>Quick Links</h4>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="services.html">Services</a></li>
+                   <li><a href="pet-care.html">Pet Care</a></li>
+                   <li><a href="book.html">Book an Appointment</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Hours & Location</h4>
+               <p>12 Maine St., Bangor, Maine</p>
+               <p>Tuesday–Friday: 8:00 AM–5:30 PM</p>
+               <p>Saturday: 8:00 AM–4:00 PM</p>
+               <p>Sunday & Monday: Closed</p>
+           </div>
+       </div>
+       <div class="footer-bottom">
+           <div class="container">
+               <p>&copy; 2026 Pine & Paws Pet Grooming. All rights reserved.</p>
+               <p><small>Web Design Client Project | Developer: Eleanor Healy</small></p>
+           </div>
+       </div>
+   </footer>
+
 
 </body>
+
 </html>
-<h1>Web Design Client Project</h1>
-<p>Developer: Eleanor Healy</p>
-<p>This website is being developed as part of my Web Design course.</p>
-<p>Project setup completed successfully.</p>
+
