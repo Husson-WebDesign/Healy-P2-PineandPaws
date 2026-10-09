@@ -683,3 +683,174 @@ textarea.form-control {
 .cta-button:focus {
   outline: 3px solid var(--secondary); /* Highlight ring using secondary color */
 }
+/* ==========================================================================
+   11. Phase 2: Accessibility & Focus States
+   ========================================================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.cta-button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.main-nav a,
+.button,
+.cta-button,
+.form-control,
+button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.main-nav a.active {
+  font-weight: 700;
+  border-bottom: 3px solid var(--accent);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 2.75rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw + 0.8rem, 2.15rem);
+}
+
+
+/* ==========================================================================
+   12. Responsive Breakpoint 1: Tablets & Laptops (max-width: 900px)
+   ========================================================================== */
+@media (max-width: 900px) {
+  .container {
+    width: 92%;
+  }
+
+  .card-grid,
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .hero-grid,
+  .about-story-grid {
+    gap: 2rem;
+  }
+
+  .footer-grid {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-col {
+    flex: 1 1 45%;
+  }
+
+  .team-card {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .team-image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+
+/* ==========================================================================
+   13. Responsive Breakpoint 2: Smartphones & Mobile (max-width: 600px)
+   ========================================================================== */
+@media (max-width: 600px) {
+  /* Section padding optimization */
+  .section {
+    padding: 2.25rem 0;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .main-nav a {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--bg-alt);
+    border-radius: 6px;
+    padding: 0.65rem 1rem;
+  }
+
+  .main-nav a.active {
+    border-bottom: none;
+    border-left: 4px solid var(--accent);
+  }
+
+  .hero-grid,
+  .about-story-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-grid,
+  .pet-care-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .two-column {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Footer Mobile Stacking */
+  .footer-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+  }
+
+  /* Mobile Safety Callout */
+  .safety-callout {
+    padding: 1.25rem 1rem;
+  }
+}
