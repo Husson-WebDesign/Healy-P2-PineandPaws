@@ -18,7 +18,8 @@
                     <span class="logo-tagline">Pet Grooming</span>
                 </div>
             </a>
-            <nav class="main-nav" aria-label="Main Navigation">
+
+            <nav class="main-nav" id="main-navigation" aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -57,12 +58,69 @@
                         </ul>
                         <p>Submitting a request does not guarantee a specific appointment time until the salon confirms availability.</p>
 
+                        <!-- Ready to Get Started - Click to Drop Down Form -->
                         <div class="cta-container">
                             <h2>Ready to get started?</h2>
-                            <p>Choose a time that works best for your schedule.</p>
-                            <a href="tel:2075550102" class="cta-button">Call to Book: (207) 555-0102</a>
+                            
+                            <button type="button" class="form-toggle-btn" aria-expanded="false">
+                                Click here to open the appointment request form ▼
+                            </button>
+
+                            <div class="form-dropdown-content">
+                                <p>Choose a time that works best for your schedule.</p>
+
+                                <form id="booking-form" class="card form-card" novalidate>
+                                    <div id="form-success" class="success-message"></div>
+
+                                    <div class="form-group">
+                                        <label for="owner-name">Owner Name *</label>
+                                        <input type="text" id="owner-name" name="owner-name">
+                                        <p class="error-message" id="name-error"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="owner-email">Email Address *</label>
+                                        <input type="email" id="owner-email" name="owner-email">
+                                        <p class="error-message" id="email-error"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="owner-phone">Phone Number *</label>
+                                        <input type="tel" id="owner-phone" name="owner-phone">
+                                        <p class="error-message" id="phone-error"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pet-name">Pet Name *</label>
+                                        <input type="text" id="pet-name" name="pet-name">
+                                        <p class="error-message" id="pet-name-error"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="service-select">Requested Service *</label>
+                                        <select id="service-select" name="service">
+                                            <option value="">-- Please Select a Service --</option>
+                                            <option value="bath">Bath & Brush ($35+)</option>
+                                            <option value="full-groom">Full Groom ($55+)</option>
+                                            <option value="nail-care">Nail Care ($18+)</option>
+                                            <option value="deshedding">De-Shedding Treatment ($30+)</option>
+                                            <option value="puppy">Puppy Introduction ($30+)</option>
+                                            <option value="cat-groom">Cat Grooming ($65+)</option>
+                                        </select>
+                                        <p class="error-message" id="service-error"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="notes">Special Notes / Health Information</label>
+                                        <textarea id="notes" name="notes" rows="3"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="button">Submit Request</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
+
                     <div class="about-story-image">
                         <img src="https://st5.depositphotos.com/1008239/65532/i/600/depositphotos_655329046-stock-photo-groomer-washing-pomeranian-dog-bath.jpg" alt="Pomeranian dog receiving a warm bath from a groomer at Pine and Paws">
                     </div>
@@ -76,63 +134,85 @@
                     <h2>Need to Know</h2>
                 </div>
                 <div class="values-grid">
-                    <article class="card value-card">
-                        <h3>Our Hours & Location</h3>
-                        <ul>
-                            <li>Monday: Closed</li>
-                            <li>Tuesday–Friday: 8:00 AM–5:30 PM</li>
-                            <li>Saturday: 8:00 AM–4:00 PM</li>
-                            <li>Sunday: Closed</li>
-                            <li>Location: 12 Maine St., Bangor, Maine</li>
-                        </ul>
-                        <p>Appointments are required for all grooming services.</p>
+                    <!-- Dropdown Card 1: Hours, Location & Contact Info -->
+                    <article class="card value-card collapsible-card">
+                        <button type="button" class="card-toggle-btn" aria-expanded="false">
+                            Important Information ▼
+                        </button>
+                        <div class="card-dropdown-content">
+                            <ul>
+                                <li>Monday: Closed</li>
+                                <li>Tuesday–Friday: 8:00 AM–5:30 PM</li>
+                                <li>Saturday: 8:00 AM–4:00 PM</li>
+                                <li>Sunday: Closed</li>
+                                <li>Location: 12 Maine St., Bangor, Maine</li>
+                            </ul>
+                            <p>Appointments are required for all grooming services.</p>
 
-                        <h3>Contact Information</h3>
-                        <ul>
-                            <li>Phone: <a href="tel:2075550102">(207) 555-0102</a></li>
-                            <li>Email: <a href="mailto:rachel@pineandpaws.example">rachel@pineandpaws.example</a></li>
-                        </ul>
+                            <h3>Contact Information</h3>
+                            <ul>
+                                <li>Phone: <a href="tel:2075550102">(207) 555-0102</a></li>
+                                <li>Email: <a href="mailto:rachel@pineandpaws.example">rachel@pineandpaws.example</a></li>
+                            </ul>
+                        </div>
                     </article>
 
-                    <article class="card value-card">
-                        <h3>Appointment Policies</h3>
-                        <ul>
-                            <li>Grooming services are provided by appointment.</li>
-                            <li>Owners should arrive at the scheduled appointment time.</li>
-                            <li>Late arrivals may require the appointment to be shortened or rescheduled.</li>
-                            <li>At least 24 hours' notice is appreciated for cancellations.</li>
-                            <li>Owners should disclose known medical conditions and behavioral concerns.</li>
-                            <li>Final service prices may differ from website starting prices.</li>
-                            <li>Extremely matted coats may require additional time and charges.</li>
-                            <li>The salon may refuse or stop a service when continuing would create a safety concern.</li>
-                            <li>Pets showing signs of contagious illness should not be brought into the salon.</li>
-                        </ul>
+                    <!-- Dropdown Card 2: Appointment Policies -->
+                    <article class="card value-card collapsible-card">
+                        <button type="button" class="card-toggle-btn" aria-expanded="false">
+                            Appointment Policies ▼
+                        </button>
+                        <div class="card-dropdown-content">
+                            <ul>
+                                <li>Grooming services are provided by appointment.</li>
+                                <li>Owners should arrive at the scheduled appointment time.</li>
+                                <li>Late arrivals may require the appointment to be shortened or rescheduled.</li>
+                                <li>At least 24 hours' notice is appreciated for cancellations.</li>
+                                <li>Owners should disclose known medical conditions and behavioral concerns.</li>
+                                <li>Final service prices may differ from website starting prices.</li>
+                                <li>Extremely matted coats may require additional time and charges.</li>
+                                <li>The salon may refuse or stop a service when continuing would create a safety concern.</li>
+                                <li>Pets showing signs of contagious illness should not be brought into the salon.</li>
+                            </ul>
+                        </div>
                     </article>
 
-                    <article class="card value-card">
-                        <h3>Frequently Asked Questions</h3>
-                        
-                        <h4>How is the final grooming price determined?</h4>
-                        <p>Final pricing depends on pet size, coat condition, coat type, temperament, requested services, and the amount of time required to complete the groom safely.</p>
+                    <!-- Dropdown Card 3: Frequently Asked Questions -->
+                    <article class="card value-card collapsible-card">
+                        <button type="button" class="card-toggle-btn" aria-expanded="false">
+                            Frequently Asked Questions ▼
+                        </button>
+                        <div class="card-dropdown-content">
+                            <div class="faq-item">
+                                <h4>How is the final grooming price determined?</h4>
+                                <p>Final pricing depends on pet size, coat condition, coat type, temperament, requested services, and the amount of time required to complete the groom safely.</p>
+                            </div>
 
-                        <h4>Can I stay with my pet during grooming?</h4>
-                        <p>Owners normally do not remain in the grooming area. Some pets become more anxious or distracted when they can see their owners during the grooming process.</p>
+                            <div class="faq-item">
+                                <h4>Can I stay with my pet during grooming?</h4>
+                                <p>Owners normally do not remain in the grooming area. Some pets become more anxious or distracted when they can see their owners during the grooming process.</p>
+                            </div>
 
-                        <h4>Do you groom cats?</h4>
-                        <p>Yes. Cat grooming is available by appointment. Service availability may depend on the cat's temperament and grooming needs.</p>
-                    </article>
+                            <div class="faq-item">
+                                <h4>Do you groom cats?</h4>
+                                <p>Yes. Cat grooming is available by appointment. Service availability may depend on the cat's temperament and grooming needs.</p>
+                            </div>
 
-                    <article class="card value-card">
-                        <h3>Frequently Asked Questions</h3>
+                            <div class="faq-item">
+                                <h4>What happens if my pet becomes too stressed?</h4>
+                                <p>The groomer may pause, modify, or stop the service if continuing would create excessive stress or a safety concern. The owner will be contacted when appropriate.</p>
+                            </div>
 
-                        <h4>What happens if my pet becomes too stressed?</h4>
-                        <p>The groomer may pause, modify, or stop the service if continuing would create excessive stress or a safety concern. The owner will be contacted when appropriate.</p>
+                            <div class="faq-item">
+                                <h4>How often should my pet be professionally groomed?</h4>
+                                <p>The appropriate grooming schedule depends on breed, coat type, lifestyle, health, and home grooming routine. Some pets benefit from professional grooming every four to eight weeks, while others may need appointments less frequently.</p>
+                            </div>
 
-                        <h4>How often should my pet be professionally groomed?</h4>
-                        <p>The appropriate grooming schedule depends on breed, coat type, lifestyle, health, and home grooming routine. Some pets benefit from professional grooming every four to eight weeks, while others may need appointments less frequently.</p>
-
-                        <h4>What if my pet has severe matting?</h4>
-                        <p>The groomer will evaluate the coat. Severe matting may require additional time, special handling, a shorter haircut, or a modified grooming plan. The safety and comfort of the pet will take priority over preserving coat length.</p>
+                            <div class="faq-item">
+                                <h4>What if my pet has severe matting?</h4>
+                                <p>The groomer will evaluate the coat. Severe matting may require additional time, special handling, a shorter haircut, or a modified grooming plan. The safety and comfort of the pet will take priority over preserving coat length.</p>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -172,6 +252,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
