@@ -13,6 +13,18 @@
    <header class="site-header">
        <div class="container header-container">
            <a href="index.html" class="brand-logo" aria-label="Pine and Paws Pet Grooming Home">
+               <!-- Paw Print Logo Mark -->
+               <div class="logo-mark" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-alt); border-radius: 50%; color: var(--primary); flex-shrink: 0; margin-right: 0.75rem;">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);">
+                       <!-- Main pad -->
+                       <path d="M12 11.5c-2.5 0-4.5 1.8-4.5 4 0 1.8 1.5 3.5 4.5 3.5s4.5-1.7 4.5-3.5c0-2.2-2-4-4.5-4z"/>
+                       <!-- Toe pads -->
+                       <circle cx="7" cy="8.5" r="1.8"/>
+                       <circle cx="10.2" cy="5.8" r="1.8"/>
+                       <circle cx="13.8" cy="5.8" r="1.8"/>
+                       <circle cx="17" cy="8.5" r="1.8"/>
+                   </svg>
+               </div>
                <div>
                    <span class="logo-text">Pine & Paws</span>
                    <span class="logo-tagline">Pet Grooming</span>
@@ -25,7 +37,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="pet-care.html">Pet Care</a></li>
-                    <li><a href="Book.html">Book an Appointment</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
                 </ul>
             </nav>
        </div>
@@ -36,18 +48,19 @@
        <section class="hero" id="home">
            <div class="container hero-grid">
                <div class="hero-content">
-                   <h1>Pine & Paws Pet Grooming</h1>
+                   <h1>Gentle, Stress-Free Pet Grooming in Bangor</h1>
                    <p class="lead">Gentle care. Professional grooming. Happier pets.</p>
                    <p>
                        At Pine & Paws Pet Grooming, every pet is treated with patience, care, and respect. Our goal is to make grooming as comfortable as possible while helping pets look and feel their best. From routine bathing and brushing to full grooming appointments, our staff takes the time to understand each pet's individual needs.
                    </p>
                    <div class="hero-actions">
-                       <a href="Book.html" class="button">Request an Appointment</a>
+                       <a href="contact.html" class="button">Prepare an Inquiry</a>
                        <a href="services.html" class="button button-outline">Explore Our Services</a>
                    </div>
+                   <p class="demo-note-inline" style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted, #5A665E);"><small><em>Note: This website is an educational student demonstration project. Submitting an inquiry allows you to preview your request but does not book a live appointment.</em></small></p>
                </div>
                <div class="hero-image">
-                   <img src="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?q=80&w=1170&auto=format&fit=crop" alt="Golden retriever receiving a gentle bath at Pine and Paws grooming salon">
+                   <img src="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?q=80&w=1170&auto=format&fit=crop" alt="Small white dog receiving a gentle scissor trim by a groomer at Pine and Paws">
                </div>
            </div>
        </section>
@@ -55,8 +68,35 @@
        <section class="section">
            <div class="container">
                <div class="safety-callout">
-                   <h3>Our Commitment to Pet Safety</h3>
+                   <h2>Our Commitment to Pet Safety</h2>
                    <p>The comfort and safety of every pet comes first. Grooming services may be modified or stopped if continuing could cause excessive stress or create a safety concern for the pet or grooming staff.</p>
+               </div>
+           </div>
+       </section>
+
+       <section class="section" id="what-to-expect">
+           <div class="container">
+               <div class="section-title">
+                   <h2>What to Expect During Your Visit</h2>
+                   <p>A simple step-by-step process designed for your pet's comfort</p>
+               </div>
+               <div class="card-grid">
+                   <div class="card">
+                       <h3>1. Prepare Inquiry</h3>
+                       <p>Tell us about your pet's breed, size, and scheduling preferences using our demonstration inquiry form.</p>
+                   </div>
+                   <div class="card">
+                       <h3>2. Discuss Needs</h3>
+                       <p>We review your pet's coat condition, health considerations, and grooming history prior to starting.</p>
+                   </div>
+                   <div class="card">
+                       <h3>3. Gentle Grooming</h3>
+                       <p>Your pet experiences a quiet, attentive grooming session with rest breaks scheduled as needed.</p>
+                   </div>
+                   <div class="card">
+                       <h3>4. Pick Up & Care Tips</h3>
+                       <p>Pick up your clean, happy pet and receive individualized maintenance advice from our staff.</p>
+                   </div>
                </div>
            </div>
        </section>
@@ -72,28 +112,34 @@
                    <article class="card service-card">
                        <div class="service-card-header">
                            <h3>Bath & Brush</h3>
-                           <span class="badge">From $35</span>
+                           <span class="badge">Starting at $35</span>
                        </div>
                        <p>A complete bathing and brushing service designed to clean the coat, remove loose fur, and leave pets feeling fresh and comfortable.</p>
-                       <div class="service-meta"><strong>Starting Price:</strong> $35</div>
+                       <div class="card-footer-action" style="margin-top: 1rem;">
+                           <a href="services.html?filter=bath-brush" style="color: var(--accent, #5490ac); font-weight: 600; text-decoration: none;">View Service Details &rarr;</a>
+                       </div>
                    </article>
 
                    <article class="card service-card">
                        <div class="service-card-header">
                            <h3>Full Groom</h3>
-                           <span class="badge">From $55</span>
+                           <span class="badge">Starting at $55</span>
                        </div>
                        <p>A complete grooming service that includes bathing, brushing, coat trimming, nail care, ear cleaning, and finishing.</p>
-                       <div class="service-meta"><strong>Starting Price:</strong> $55</div>
+                       <div class="card-footer-action" style="margin-top: 1rem;">
+                           <a href="services.html?filter=full-groom" style="color: var(--accent, #5490ac); font-weight: 600; text-decoration: none;">View Service Details &rarr;</a>
+                       </div>
                    </article>
 
                    <article class="card service-card">
                        <div class="service-card-header">
                            <h3>Puppy Introduction</h3>
-                           <span class="badge">From $30</span>
+                           <span class="badge">Starting at $30</span>
                        </div>
                        <p>A gentle introductory grooming appointment designed to help puppies become comfortable with grooming equipment, handling, sounds, and the salon environment.</p>
-                       <div class="service-meta"><strong>Starting Price:</strong> $30</div>
+                       <div class="card-footer-action" style="margin-top: 1rem;">
+                           <a href="services.html?filter=puppy-intro" style="color: var(--accent, #5490ac); font-weight: 600; text-decoration: none;">View Service Details &rarr;</a>
+                       </div>
                    </article>
                </div>
            </div>
@@ -109,10 +155,10 @@
                <div class="card">
                    <ul class="contact-info-list">
                        <li class="contact-info-item">
-                           <strong>Phone:</strong> <a href="tel:2075550102">207-555-0102</a>
+                           <strong>Phone:</strong> <a href="tel:2075550102">(207) 555-0102</a> <small style="color: var(--text-muted, #5A665E);">(Sample Demonstration Number)</small>
                        </li>
                        <li class="contact-info-item">
-                           <strong>Email:</strong> <a href="mailto:rachel@pineandpaws.example">rachel@pineandpaws.example</a>
+                           <strong>Email:</strong> <a href="mailto:rachel@pineandpaws.example">rachel@pineandpaws.example</a> <small style="color: var(--text-muted, #5A665E);">(Sample Email)</small>
                        </li>
                        <li class="contact-info-item">
                            <strong>Location:</strong> 12 Maine St., Bangor, Maine
@@ -121,7 +167,7 @@
                            <strong>Hours:</strong> Mon: Closed | Tue–Fri: 8:00 AM–5:30 PM | Sat: 8:00 AM–4:00 PM | Sun: Closed
                        </li>
                    </ul>
-                   <a href="Book.html" class="button">Request an Appointment</a>
+                   <a href="contact.html" class="button">Prepare an Inquiry</a>
                </div>
            </div>
        </section>
@@ -141,7 +187,7 @@
                    <li><a href="about.html">About</a></li>
                    <li><a href="services.html">Services</a></li>
                    <li><a href="pet-care.html">Pet Care</a></li>
-                   <li><a href="Book.html">Book an Appointment</a></li>
+                   <li><a href="contact.html">Appointment Inquiry</a></li>
                </ul>
            </div>
            <div class="footer-col">

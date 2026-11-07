@@ -1,14 +1,56 @@
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Open index.html",
-            "file": "/Users/eleanorhealy/Documents/GitHub/Healy-client-project/index.html"
-        }
-    ]
-}
+  [
+  {
+    "id": "bath-brush",
+    "name": "Bath & Brush",
+    "category": "all",
+    "startingPrice": "$35",
+    "duration": "1 - 1.5 hours",
+    "description": "A complete bathing and brushing service designed to clean the coat, remove loose fur, and leave pets feeling fresh.",
+    "suitability": "Ideal for routine coat maintenance for all dogs and cats."
+  },
+  {
+    "id": "full-groom",
+    "name": "Full Groom",
+    "category": "dog",
+    "startingPrice": "$55",
+    "duration": "2 - 3 hours",
+    "description": "Comprehensive grooming service including bath, blow-dry, styling hair cut, nail trim, and ear cleaning.",
+    "suitability": "Recommended for breeds requiring regular haircutting or heavy coat styling."
+  },
+  {
+    "id": "puppy-intro",
+    "name": "Puppy Introduction",
+    "category": "puppy",
+    "startingPrice": "$30",
+    "duration": "45 - 60 mins",
+    "description": "Gentle introductory session to acclimate young pets to salon equipment, sounds, and positive handling.",
+    "suitability": "Designed specifically for puppies under 6 months old."
+  },
+  {
+    "id": "nail-care",
+    "name": "Nail Care",
+    "category": "all",
+    "startingPrice": "$15",
+    "duration": "15 - 30 mins",
+    "description": "Nail trimming and filing to promote healthy paw structure and comfortable walking.",
+    "suitability": "Suitable for all dogs and cats as a standalone or add-on service."
+  },
+  {
+    "id": "de-shedding",
+    "name": "De-Shedding Treatment",
+    "category": "dog",
+    "startingPrice": "$45",
+    "duration": "1.5 - 2 hours",
+    "description": "Specialized undercoat removal using de-shedding shampoos, conditioners, and targeted brushing tools.",
+    "suitability": "Best for double-coated breeds experiencing heavy seasonal shedding."
+  },
+  {
+    "id": "cat-grooming",
+    "name": "Cat Grooming",
+    "category": "cat",
+    "startingPrice": "$50",
+    "duration": "1 - 2 hours",
+    "description": "Patience-focused feline grooming service including gentle bath, dry, brush-out, and nail trim.",
+    "suitability": "Tailored for long-haired or short-haired cats needing coat maintenance."
+  }
+]

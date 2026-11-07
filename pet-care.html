@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Care Guide | Pine & Paws Pet Grooming</title>
+    <title>Pet Care Guide | Pine & Paws Pet Grooming Bangor</title>
+    <meta name="description" content="Home coat care, nail care, and visit preparation tips for dogs and cats from Pine & Paws Pet Grooming in Bangor, ME.">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -13,119 +15,117 @@
     <header class="site-header">
         <div class="container header-container">
             <a href="index.html" class="brand-logo" aria-label="Pine and Paws Pet Grooming Home">
+                <div class="logo-mark" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-alt); border-radius: 50%; color: var(--primary); flex-shrink: 0; margin-right: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);">
+                        <path d="M12 11.5c-2.5 0-4.5 1.8-4.5 4 0 1.8 1.5 3.5 4.5 3.5s4.5-1.7 4.5-3.5c0-2.2-2-4-4.5-4z"/>
+                        <circle cx="7" cy="8.5" r="1.8"/>
+                        <circle cx="10.2" cy="5.8" r="1.8"/>
+                        <circle cx="13.8" cy="5.8" r="1.8"/>
+                        <circle cx="17" cy="8.5" r="1.8"/>
+                    </svg>
+                </div>
                 <div>
                     <span class="logo-text">Pine & Paws</span>
                     <span class="logo-tagline">Pet Grooming</span>
                 </div>
             </a>
-            <nav class="main-nav" aria-label="Main Navigation">
+            <nav class="main-nav" id="main-navigation" aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="pet-care.html" class="active">Pet Care</a></li>
-                    <li><a href="Book.html">Book an Appointment</a></li>
+                    <li><a href="pet-care.html" class="active" aria-current="page">Pet Care</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
                 </ul>
             </nav>
         </div>
-        <script src="js/script.js" defer></script>
     </header>
 
     <main>
         <section class="about-hero">
             <div class="container">
-                <h1>Pet Care Tips</h1>
-                <p class="lead">Gentle care. Professional grooming. Happier pets.</p>
+                <h1>Pet Care & Grooming Guidance</h1>
+                <p class="lead">Gentle care routines and helpful tips for maintaining your pet's comfort between salon visits.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <div class="about-story-grid">
+                
+                <!-- Hero Grid with Image & Table of Contents -->
+                <div class="about-story-grid" style="margin-bottom: 2rem;">
                     <div class="about-story-content">
                         <h2>At-Home Care for Your Pet</h2>
                         <p>Taking care of your pet's hygiene between grooming visits keeps them comfortable and happy.</p>
-                        <h3>Habits That Promote Pet Health:</h3>
-                        <ul>
-                            <li>Coat Care & Brushing</li>
-                            <li>Nail Maintenance</li>
-                            <li>Preparing for a Grooming Appointment</li>
-                            <li>After-Grooming Rest & Care</li>
+                        <h3>Quick Navigation:</h3>
+                        <ul style="display: flex; flex-direction: column; gap: 0.5rem; list-style: none; padding: 0; margin-top: 1rem;">
+                            <li><a href="#coat-care" class="button button-outline" style="text-align: left; padding: 0.4rem 0.8rem;">Coat Care & Brushing</a></li>
+                            <li><a href="#nail-care" class="button button-outline" style="text-align: left; padding: 0.4rem 0.8rem;">Nail Maintenance</a></li>
+                            <li><a href="#visit-prep" class="button button-outline" style="text-align: left; padding: 0.4rem 0.8rem;">Preparing for a Grooming Visit</a></li>
+                            <li><a href="#after-care" class="button button-outline" style="text-align: left; padding: 0.4rem 0.8rem;">After-Grooming Rest & Care</a></li>
                         </ul>
                     </div>
                     <div class="about-story-image">
-                        <img src="https://st2.depositphotos.com/2289871/8874/i/600/depositphotos_88746850-stock-photo-beautiful-asian-girl-kissing-american.jpg" alt="Pet owner bonding with a well-groomed, happy pet at home">
+                        <img src="https://st2.depositphotos.com/2289871/8874/i/600/depositphotos_88746850-stock-photo-beautiful-asian-girl-kissing-american.jpg" alt="Pet owner bonding with a well-groomed, happy pet at home" width="600" height="400">
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-title">
-                    <h2>What You Can Do for Your Pet</h2>
-                    <p>Healthy Habits for Happy Pets</p>
+                <!-- Section 1: Coat Care -->
+                <article class="card" id="coat-care" style="margin-bottom: 1.5rem;">
+                    <h2>Coat Care & Brushing</h2>
+                    <p>Regular brushing keeps your pet's coat clean, manageable, and comfortable between salon appointments.</p>
+                    <p>Depending on coat type, routine brushing helps to:</p>
+                    <ul>
+                        <li>Remove loose fur and reduce shedding around the house</li>
+                        <li>Prevent painful tangles and severe matting</li>
+                        <li>Distribute natural skin oils for a shiny, healthy coat</li>
+                        <li>Allow owners to notice early changes in skin health or external parasites</li>
+                    </ul>
+                    <p><small><em>Note: Severe mats should never be pulled or cut at home with scissors, as doing so risks injuring delicate pet skin. Professional assistance is recommended for severe matting.</em></small></p>
+                </article>
+
+                <!-- Section 2: Nail Care -->
+                <article class="card" id="nail-care" style="margin-bottom: 1.5rem;">
+                    <h2>Nail Maintenance</h2>
+                    <p>Keeping nails at a comfortable length helps pets maintain natural posture and walk smoothly without joint strain.</p>
+                    <p>Overgrown nails may lead to:</p> 
+                    <ul>
+                        <li>Painful pressure on toe joints while standing or running</li>
+                        <li>Nail splitting or painful snagging on rugs and grass</li>
+                        <li>Curling back into the paw pad in severe cases</li>
+                    </ul>
+                    <p>Trimming frequency depends on your pet's age, activity level, and walking surfaces, but typically ranges every 3 to 4 weeks.</p>
+                </article>
+
+                <!-- Section 3: Preparing for a Visit -->
+                <article class="card" id="visit-prep" style="margin-bottom: 1.5rem;">
+                    <h2>Preparing for a Grooming Visit</h2>
+                    <p>Help your pet enjoy a calm salon experience by taking a few simple steps before arriving:</p>
+                    <ul>
+                        <li>Allow your pet time for a light bathroom break right before drop-off</li>
+                        <li>Inform our team of any medical conditions, recent injuries, or skin sensitivities</li>
+                        <li>Share behavioral preferences or past grooming concerns so we can adjust handling</li>
+                        <li>Avoid feeding unusually large meals immediately prior to their appointment time</li>
+                    </ul>
+                </article>
+
+                <!-- Section 4: After-Groom Care -->
+                <article class="card" id="after-care" style="margin-bottom: 1.5rem;">
+                    <h2>After-Grooming Rest & Care</h2>
+                    <p>Some pets experience sensory tiredness after a full grooming session.</p>
+                    <ul>
+                        <li>Provide fresh water and a quiet space to nap after returning home</li>
+                        <li>Allow time for skin to adjust if significant matting or heavy coat was removed</li>
+                        <li>Contact our salon if you have any questions or notice unexpected skin irritation</li>
+                    </ul>
+                </article>
+
+                <!-- Veterinary Disclaimer Callout -->
+                <div class="safety-callout">
+                    <h2 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 0.5rem;">Veterinary Disclaimer</h2>
+                    <p style="margin-bottom: 0;">Grooming guidance provided on this website is for routine maintenance and educational purposes only. Grooming services are not a substitute for veterinary care. Please consult a licensed veterinarian regarding medical concerns, skin conditions, or health issues.</p>
                 </div>
-                <div class="values-grid">
-                    <article class="card value-card">
-                        <h3>Coat Care</h3>
-                        <p>Regular brushing helps keep a pet's coat clean and manageable.</p>
-                        <p>Depending on coat type, brushing may help:</p>
-                        <ul>
-                            <li>Remove loose fur</li>
-                            <li>Prevent tangles</li>
-                            <li>Reduce matting</li>
-                            <li>Distribute natural oils</li>
-                            <li>Remove small amounts of debris</li>
-                            <li>Allow owners to notice changes in the skin or coat</li>
-                        </ul>
-                        <p>Owners should use brushes and grooming tools appropriate for their pet's coat type.</p>
-                        <p>Severe mats should not be pulled or cut at home without proper knowledge because doing so may injure the skin.</p>
-                    </article>
 
-                    <article class="card value-card">
-                        <h3>Nail Care</h3>
-                        <p>Regular nail maintenance helps pets remain comfortable while standing and walking.</p>
-                        <p>Overgrown nails may:</p> 
-                        <ul>
-                            <li>Affect a pet's walking posture</li>
-                            <li>Become uncomfortable</li>
-                            <li>Snag on surfaces</li>
-                            <li>Split</li>
-                            <li>Curl toward the paw</li>
-                        </ul>
-                        <p>How often nails need trimming depends on the pet's activity level, age, and how quickly the nails grow.</p>
-                    </article>
-
-                    <article class="card value-card">
-                        <h3>Preparing for a Groom</h3>
-                        <p>Before an appointment, owners should:</p>
-                        <ul>
-                            <li>Allow their pet to use the bathroom</li>
-                            <li>Arrive at the scheduled appointment time</li>
-                            <li>Inform staff about medical conditions</li>
-                            <li>Report allergies or skin sensitivities</li>
-                            <li>Explain behavioral concerns</li>
-                            <li>Mention any recent injuries</li>
-                            <li>Tell the groomer about previous grooming difficulties</li>
-                        </ul>
-                        <p>Owners should avoid giving pets unusually large meals immediately before a grooming appointment.</p>
-                    </article>
-
-                    <article class="card value-card">
-                        <h3>After-Groom Care</h3>
-                        <p>Some pets may be tired after grooming.</p>
-                        <p>After returning home:</p>
-                        <ul>
-                            <li>Provide fresh water</li>
-                            <li>Allow the pet time to rest</li>
-                            <li>Monitor the skin for unexpected irritation</li>
-                            <li>Avoid excessive outdoor activity immediately if the pet appears tired</li>
-                            <li>Contact the salon if there are concerns about the grooming service</li>
-                        </ul>
-                        <p>Pets that have had significant matting removed may temporarily behave differently because their skin and movement feel different after grooming.</p>
-                    </article>
-                </div>
             </div>
         </section>
     </main>
@@ -144,7 +144,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="pet-care.html">Pet Care</a></li>
-                    <li><a href="Book.html">Book an Appointment</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -164,5 +164,4 @@
     </footer>
 
 </body>
-
 </html>

@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grooming Services | Pine & Paws Pet Grooming</title>
+    <title>Grooming Services | Pine & Paws Pet Grooming Bangor</title>
+    <meta name="description" content="Explore our gentle grooming services for dogs and cats in Bangor, Maine. View starting prices, durations, and inquiry options.">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -13,115 +15,68 @@
     <header class="site-header">
         <div class="container header-container">
             <a href="index.html" class="brand-logo" aria-label="Pine and Paws Pet Grooming Home">
+                <div class="logo-mark" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-alt); border-radius: 50%; color: var(--primary); flex-shrink: 0; margin-right: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);">
+                        <path d="M12 11.5c-2.5 0-4.5 1.8-4.5 4 0 1.8 1.5 3.5 4.5 3.5s4.5-1.7 4.5-3.5c0-2.2-2-4-4.5-4z"/>
+                        <circle cx="7" cy="8.5" r="1.8"/>
+                        <circle cx="10.2" cy="5.8" r="1.8"/>
+                        <circle cx="13.8" cy="5.8" r="1.8"/>
+                        <circle cx="17" cy="8.5" r="1.8"/>
+                    </svg>
+                </div>
                 <div>
                     <span class="logo-text">Pine & Paws</span>
                     <span class="logo-tagline">Pet Grooming</span>
                 </div>
             </a>
-            <nav class="main-nav" aria-label="Main Navigation">
+         
+            <nav class="main-nav" id="main-navigation" aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="services.html" class="active" aria-current="page">Services</a></li>
                     <li><a href="pet-care.html">Pet Care</a></li>
-                    <li><a href="Book.html">Book an Appointment</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
                 </ul>
             </nav>
         </div>
-        <script src="js/script.js" defer></script>
     </header>
 
     <main>
         <section class="about-hero">
             <div class="container">
-                <h1>Our Services</h1>
-                <p class="lead">Gentle care. Professional grooming. Happier pets.</p>
+                <h1>Professional Grooming Services</h1>
+                <p class="lead">Gentle, individual care tailored to your dog or cat's specific needs.</p>
             </div>
         </section>
 
+        <!-- Pricing Intro Grid with Image -->
         <section class="section">
             <div class="container">
-                <div class="about-story-grid">
+                <div class="about-story-grid" style="margin-bottom: 2rem;">
                     <div class="about-story-content">
                         <h2>Grooming Pricing & Details</h2>
-                        <p>All prices shown are starting prices.</p>
-                        <p>Final pricing depends on pet size, coat type, coat condition, temperament, requested services, and the amount of grooming time required.</p>
+                        <p>All prices shown are starting prices for pets in well-maintained coats.</p>
+                        <p>Final pricing and service times depend on pet size, coat type, coat condition, temperament, requested styling work, and the amount of grooming time required.</p>
                     </div>
                     <div class="about-story-image">
                         <img src="https://st5.depositphotos.com/1000904/68948/i/600/depositphotos_689488458-stock-photo-groomer-grinding-dog-claws-dremel.jpg" alt="Professional groomer carefully grinding a dog's nails with a Dremel tool">
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-title">
-                    <h2>What We Offer</h2>
+                <!-- Category Filtering Controls -->
+                <div class="filter-controls" style="display: flex; gap: 0.5rem; margin-bottom: 2rem; flex-wrap: wrap;" aria-label="Filter Services">
+                    <button type="button" class="button filter-btn active" data-filter="all" style="background-color: var(--primary, #2c4a3e); color: #fff; padding: 0.5rem 1rem;">All Services</button>
+                    <button type="button" class="button button-outline filter-btn" data-filter="dog" style="padding: 0.5rem 1rem;">Dog Services</button>
+                    <button type="button" class="button button-outline filter-btn" data-filter="cat" style="padding: 0.5rem 1rem;">Cat Services</button>
+                    <button type="button" class="button button-outline filter-btn" data-filter="puppy" style="padding: 0.5rem 1rem;">Puppy Intro</button>
                 </div>
-                <div class="values-grid">
-                    <article class="card value-card">
-                        <h3>Bath & Brush</h3>
-                        <p>A routine maintenance service that includes shampoo, conditioner when appropriate, blow drying, brushing, ear cleaning, and coat finishing.</p>
-                        <p>This service is appropriate for many pets that do not require a haircut.</p>
-                        <p><strong>Starting Price:</strong> $35</p>
-                        <p><strong>Approximate Duration:</strong> 60–90 minutes</p>
-                    </article>
 
-                    <article class="card value-card">
-                        <h3>Full Groom</h3>
-                        <p>A complete grooming appointment that includes bathing, brushing, drying, nail trimming, ear cleaning, haircut or coat trimming when appropriate, and finishing.</p>
-                        <p><strong>Starting Price:</strong> $55</p>
-                        <p><strong>Approximate Duration:</strong> 90–150 minutes</p>
-                    </article>
-
-                    <article class="card value-card">
-                        <h3>Nail Care</h3>
-                        <p>Nail trimming and basic nail inspection to help maintain comfortable nail length.</p>
-                        <p><strong>Starting Price:</strong> $18</p>
-                        <p><strong>Approximate Duration:</strong> 15–20 minutes</p>
-                    </article>
-
-                    <article class="card value-card">
-                        <h3>De-Shedding Treatment</h3>
-                        <p>A specialized coat treatment and brushing service designed to remove loose undercoat and reduce excessive shedding.</p>
-                        <p>This service is especially useful for many double-coated breeds.</p>
-                        <p><strong>Starting Price:</strong> $30</p>
-                        <p><strong>Approximate Duration:</strong> 45–75 minutes</p>
-                    </article>
-
-                    <article class="card value-card">
-                        <h3>Puppy Introduction</h3>
-                        <p>A short and gentle first grooming experience for young dogs to help build a positive foundation for future appointments.</p>
-                        <p>The appointment may introduce the puppy to:</p>
-                        <ul>
-                            <li>Brushing</li>
-                            <li>Gentle handling</li>
-                            <li>Grooming tables</li>
-                            <li>Dryers</li>
-                            <li>Grooming sounds</li>
-                            <li>Paw handling</li>
-                            <li>Basic salon routines</li>
-                        </ul>
-                        <p><strong>Starting Price:</strong> $30</p>
-                        <p><strong>Approximate Duration:</strong> 30–45 minutes</p>
-                    </article>
-
-                    <article class="card value-card">
-                        <h3>Cat Grooming</h3>
-                        <p>Cat grooming services are scheduled by appointment.</p>
-                        <p>Professional grooming services for cats may include:</p>
-                        <ul>
-                            <li>Brushing</li>
-                            <li>Coat maintenance</li>
-                            <li>Nail trimming</li>
-                            <li>Sanitary trimming when appropriate</li>
-                            <li>Other services depending on coat condition and temperament</li>
-                        </ul>
-                        <p><strong>Starting Price:</strong> $65</p>
-                        <p><strong>Approximate Duration:</strong> 60–120 minutes</p>
-                    </article>
+                <!-- Dynamic Grid Powered by services.json (with local fallback) -->
+                <div class="card-grid" id="services-grid">
+                    <p>Loading services...</p>
                 </div>
+
             </div>
         </section>
     </main>
@@ -140,7 +95,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="pet-care.html">Pet Care</a></li>
-                    <li><a href="Book.html">Book an Appointment</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -160,5 +115,4 @@
     </footer>
 
 </body>
-
 </html>
