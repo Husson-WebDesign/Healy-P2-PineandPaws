@@ -1,74 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Services - My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Inquiry | Pine & Paws Pet Grooming Bangor</title>
+    <meta name="description" content="Prepare an appointment inquiry for gentle dog or cat grooming at Pine & Paws in Bangor, Maine. Preview your request with our demonstration form.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About</a> | 
-        <a href="contact.html">Contact</a>
-    </nav>
 
-    <section id="about">
-    <h2>About Us</h2>
-    <p>
-        Approved Appointment Instructions
-Customers may contact Pine & Paws Pet Grooming by phone or email to request an appointment.
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" aria-label="Pine and Paws Pet Grooming Home">
+                <div class="logo-mark" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-alt); border-radius: 50%; color: var(--primary); flex-shrink: 0; margin-right: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);">
+                        <path d="M12 11.5c-2.5 0-4.5 1.8-4.5 4 0 1.8 1.5 3.5 4.5 3.5s4.5-1.7 4.5-3.5c0-2.2-2-4-4.5-4z"/>
+                        <circle cx="7" cy="8.5" r="1.8"/>
+                        <circle cx="10.2" cy="5.8" r="1.8"/>
+                        <circle cx="13.8" cy="5.8" r="1.8"/>
+                        <circle cx="17" cy="8.5" r="1.8"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="logo-text">Pine & Paws</span>
+                    <span class="logo-tagline">Pet Grooming</span>
+                </div>
+            </a>
+         
+            <nav class="main-nav" id="main-navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pet-care.html">Pet Care</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Appointment Inquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-When requesting an appointment, customers should be prepared to provide:
+    <main>
+        <!-- Page Header -->
+        <section class="about-hero">
+            <div class="container">
+                <h1>Prepare an Appointment Inquiry</h1>
+                <p class="lead">Tell us about your pet so we can help you choose the best grooming service.</p>
+            </div>
+        </section>
 
-owner name,
-phone number,
-pet name,
-pet type,
-approximate pet size,
-requested service,
-preferred appointment date,
-and any important grooming or health information.
-Submitting a request does not guarantee a specific appointment time until the salon confirms availability.
+        <!-- Main Content Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="two-column">
+                    
+                    <!-- Form Column -->
+                    <div class="col">
+                        <!-- Demonstration Disclosure Box -->
+                        <div class="safety-callout" style="margin-bottom: 2rem;">
+                            <h2 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 0.5rem;">Student Demonstration Notice</h2>
+                            <p style="margin-bottom: 0;">This website is an educational student project. Submitting this form allows you to preview your inquiry details on screen, but <strong>does not submit a live booking or contact our salon</strong>.</p>
+                        </div>
 
-15. Business Hours
-Monday: Closed Tuesday-Friday: 8:00 AM-5:30 PM Saturday: 8:00 AM-4:00 PM Sunday: Closed
+                        <form id="inquiry-form" action="#" method="post" novalidate>
+                            
+                            <div class="form-group">
+                                <label for="owner-name">Owner Full Name <span class="required" style="color: #c0392b;">*</span></label>
+                                <input type="text" id="owner-name" name="ownerName" class="form-control" required placeholder="e.g., Jane Doe">
+                            </div>
 
-Appointments are required for grooming services.
+                            <div class="two-column">
+                                <div class="col form-group">
+                                    <label for="owner-email">Email Address <span class="required" style="color: #c0392b;">*</span></label>
+                                    <input type="email" id="owner-email" name="ownerEmail" class="form-control" required placeholder="name@example.com">
+                                </div>
+                                <div class="col form-group">
+                                    <label for="owner-phone">Phone Number <span class="required" style="color: #c0392b;">*</span></label>
+                                    <input type="tel" id="owner-phone" name="ownerPhone" class="form-control" required placeholder="(207) 555-0199">
+                                </div>
+                            </div>
 
-16. Staff Information
-Students may use the following approved fictitious staff members.
+                            <div class="two-column">
+                                <div class="col form-group">
+                                    <label for="pet-name">Pet's Name <span class="required" style="color: #c0392b;">*</span></label>
+                                    <input type="text" id="pet-name" name="petName" class="form-control" required placeholder="e.g., Barnaby">
+                                </div>
+                                <div class="col form-group">
+                                    <label for="pet-type">Pet Type <span class="required" style="color: #c0392b;">*</span></label>
+                                    <select id="pet-type" name="petType" class="form-control" required>
+                                        <option value="">Select pet type...</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                    </select>
+                                </div>
+                            </div>
 
-Rachel Moreno
-Position: Owner and Lead Groomer
+                            <div class="two-column">
+                                <div class="col form-group">
+                                    <label for="service-interest">Requested Service <span class="required" style="color: #c0392b;">*</span></label>
+                                    <select id="service-interest" name="serviceInterest" class="form-control" required>
+                                        <option value="">Select a service...</option>
+                                        <option value="bath-brush">Bath & Brush (From $35)</option>
+                                        <option value="full-groom">Full Groom (From $55)</option>
+                                        <option value="puppy-intro">Puppy Introduction (From $30)</option>
+                                        <option value="nail-care">Nail Care (From $15)</option>
+                                        <option value="de-shedding">De-Shedding Treatment (From $45)</option>
+                                        <option value="cat-grooming">Cat Grooming (From $50)</option>
+                                    </select>
+                                </div>
+                                <div class="col form-group">
+                                    <label for="preferred-day">Preferred Day</label>
+                                    <select id="preferred-day" name="preferredDay" class="form-control">
+                                        <option value="flexible">Flexible / Any Available</option>
+                                        <option value="tuesday">Tuesday</option>
+                                        <option value="wednesday">Wednesday</option>
+                                        <option value="thursday">Thursday</option>
+                                        <option value="friday">Friday</option>
+                                        <option value="saturday">Saturday</option>
+                                    </select>
+                                </div>
+                            </div>
 
-Rachel oversees the salon and has worked with companion animals for more than ten years.
+                            <div class="form-group">
+                                <label for="pet-notes">Breed, Temperament & Special Needs</label>
+                                <textarea id="pet-notes" name="petNotes" class="form-control" placeholder="Please mention breed, age, health conditions, or past grooming sensitivities..."></textarea>
+                            </div>
 
-Her grooming approach emphasizes patient handling, clear communication with owners, and creating a positive experience whenever possible.
+                            <button type="submit" class="button" style="width: 100%;">Preview Inquiry Request</button>
+                        </form>
+                    </div>
 
-Jenna Walsh
-Position: Pet Groomer
+                    <!-- Contact Info & Hours Sidebar -->
+                    <div class="col">
+                        <div class="card" style="height: 100%;">
+                            <h2>Salon Contact Details</h2>
+                            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Appointments are required for all grooming sessions to ensure a quiet, individual environment for every pet.</p>
 
-Jenna works primarily with dogs and specializes in routine coat maintenance, full grooming appointments, and puppy introductions.
+                            <ul class="contact-info-list">
+                                <li class="contact-info-item">
+                                    <strong>Phone:</strong><br>
+                                    <a href="tel:2075550102">(207) 555-0102</a> <small style="color: var(--text-muted);">(Sample Number)</small>
+                                </li>
+                                <li class="contact-info-item" style="margin-top: 1rem;">
+                                    <strong>Email:</strong><br>
+                                    <a href="mailto:rachel@pineandpaws.example">rachel@pineandpaws.example</a> <small style="color: var(--text-muted);">(Sample Email)</small>
+                                </li>
+                                <li class="contact-info-item" style="margin-top: 1rem;">
+                                    <strong>Location:</strong><br>
+                                    12 Maine St., Bangor, Maine
+                                </li>
+                            </ul>
 
-She enjoys helping new pet owners establish manageable grooming routines.
+                            <hr style="border: 0; border-top: 1px solid var(--border); margin: 1.5rem 0;">
 
-Aaron Lee
-Position: Grooming Assistant
+                            <h3>Grooming Hours</h3>
+                            <p style="margin-bottom: 0.5rem;"><strong>Tuesday – Friday:</strong> 8:00 AM – 5:30 PM</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Saturday:</strong> 8:00 AM – 4:00 PM</p>
+                            <p style="margin-bottom: 0;"><strong>Sunday & Monday:</strong> Closed</p>
+                        </div>
+                    </div>
 
-Aaron supports bathing, drying, sanitation, salon preparation, and pet comfort.
+                </div>
+            </div>
+        </section>
+    </main>
 
-He also assists groomers with maintaining a clean and organized work environment.
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Pine & Paws</h3>
+                <p>Gentle care. Professional grooming. Happier pets.</p>
+                <p class="disclaimer-text">Grooming services are not a substitute for veterinary care. Customers should contact a licensed veterinarian regarding medical concerns, injuries, unusual skin conditions, or other health issues.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pet-care.html">Pet Care</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hours & Location</h4>
+                <p>12 Maine St., Bangor, Maine</p>
+                <p>Tuesday–Friday: 8:00 AM–5:30 PM</p>
+                <p>Saturday: 8:00 AM–4:00 PM</p>
+                <p>Sunday & Monday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pine & Paws Pet Grooming. All rights reserved.</p>
+                <p><small>Web Design Client Project | Developer: Eleanor Healy</small></p>
+            </div>
+        </div>
+    </footer>
 
-17. Frequently Asked Questions
-The following questions and answers are approved for website use.
-
-How is the final grooming price determined?
-Final pricing depends on pet size, coat condition, coat type, temperament, requested services, and the amount of time required to complete the groom safely.
-
-Can I stay with my pet during grooming?
-Owners normally do not remain in the grooming area.
-    </p>
 </body>
 </html>
-</section>
-<link rel="stylesheet" href="css/style.css">

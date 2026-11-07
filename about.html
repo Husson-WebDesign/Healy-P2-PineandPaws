@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Pine & Paws Pet Grooming</title>
+    <title>About Us | Pine & Paws Pet Grooming Bangor</title>
+    <meta name="description" content="Meet Rachel, Jenna, and Aaron at Pine & Paws Pet Grooming in Bangor, ME. Learn about our gentle, patient grooming philosophy for dogs and cats.">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -13,22 +15,30 @@
     <header class="site-header">
         <div class="container header-container">
             <a href="index.html" class="brand-logo" aria-label="Pine and Paws Pet Grooming Home">
+                <div class="logo-mark" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--bg-alt); border-radius: 50%; color: var(--primary); flex-shrink: 0; margin-right: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);">
+                        <path d="M12 11.5c-2.5 0-4.5 1.8-4.5 4 0 1.8 1.5 3.5 4.5 3.5s4.5-1.7 4.5-3.5c0-2.2-2-4-4.5-4z"/>
+                        <circle cx="7" cy="8.5" r="1.8"/>
+                        <circle cx="10.2" cy="5.8" r="1.8"/>
+                        <circle cx="13.8" cy="5.8" r="1.8"/>
+                        <circle cx="17" cy="8.5" r="1.8"/>
+                    </svg>
+                </div>
                 <div>
                     <span class="logo-text">Pine & Paws</span>
                     <span class="logo-tagline">Pet Grooming</span>
                 </div>
             </a>
-            <nav class="main-nav" aria-label="Main Navigation">
+            <nav class="main-nav" id="main-navigation" aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="about.html" class="active" aria-current="page">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="pet-care.html">Pet Care</a></li>
-                    <li><a href="Book.html">Book an Appointment</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
                 </ul>
             </nav>
         </div>
-        <script src="js/script.js" defer></script>
     </header>
 
     <main>
@@ -45,8 +55,8 @@
                     <div class="about-story-content">
                         <h2>Our Story</h2>
                         <p>Pine & Paws Pet Grooming was established to provide local pet owners with professional grooming in an environment built around patience, cleanliness, and respectful animal handling.</p>
-                        <p>The salon recognizes that pets respond differently to grooming. Some pets are comfortable immediately, while others may need additional time and reassurance.</p>
-                        <p>The staff works to create positive grooming experiences whenever possible; therefore, the salon may recommend a different grooming approach if a requested service would not be safe or appropriate for the pet.</p>
+                        <p>We recognize that every pet responds differently to salon care. Some pets settle in immediately, while others need additional time, gentle breaks, and quiet reassurance.</p>
+                        <p>Our team always prioritizes animal comfort and health. If a requested service or haircut is not safe or suitable for your pet's coat or temperament, we will discuss a more appropriate care plan with you.</p>
                     </div>
                     <div class="about-story-image">
                         <img src="https://st2.depositphotos.com/2289871/11859/i/600/depositphotos_118597738-stock-photo-woman-using-a-comb-brush.jpg" alt="Pet groomer gently combing a cat's coat at Pine and Paws salon">
@@ -64,65 +74,56 @@
 
                 <div class="values-grid">
                     <article class="card value-card">
-                        <h3>Staff Commitment</h3>
-                        <p>Pine & Paws Pet Grooming employees are expected to:</p>
+                        <h3>What Owners Can Expect</h3>
+                        <p>When you entrust your pet to Pine & Paws, our team promises to:</p>
                         <ul>
-                            <li>Treat pets respectfully</li>
-                            <li>Maintain a clean workspace</li>
-                            <li>Communicate clearly with owners</li>
-                            <li>Report concerns they observe</li>
-                            <li>Use safe handling techniques</li>
-                            <li>Prioritize animal welfare</li>
+                            <li>Treat every pet with patience and gentle handling</li>
+                            <li>Maintain a calm, clean, and sanitized salon environment</li>
+                            <li>Communicate clearly regarding coat health and service needs</li>
+                            <li>Prioritize pet well-being over quick completion times</li>
+                            <li>Use safe, stress-reducing grooming techniques</li>
                         </ul>
                     </article>
 
                     <article class="card value-card">
                         <h3>Our Philosophy</h3>
-                        <p>The salon believes grooming should support both appearance and health.</p>
-                        <p>Routine grooming can help:</p> 
+                        <p>We believe grooming should support both long-term health and daily comfort.</p>
+                        <p>Routine salon visits help to:</p> 
                         <ul>
-                            <li>Reduce loose fur</li>
-                            <li>Prevent severe matting</li>
-                            <li>Keep nails at a comfortable length</li>
-                            <li>Maintain coat cleanliness</li>
-                            <li>Improve pet comfort</li>
-                            <li>Help owners notice changes in skin or coat condition</li>
+                            <li>Reduce shedding and loose fur around your home</li>
+                            <li>Prevent painful coat matting and tangling</li>
+                            <li>Maintain proper nail length for healthy walking posture</li>
+                            <li>Spot early changes in skin health, ears, or coat condition</li>
                         </ul>
                     </article>
 
                     <article class="card value-card">
-                        <h3>Pet Safety</h3>
-                        <p>Owners are encouraged to tell staff about:</p>
+                        <h3>Pet Safety & Preparation</h3>
+                        <p>To help us tailor the visit, we encourage owners to share:</p>
                         <ul>
-                            <li>Health conditions</li>
-                            <li>Allergies</li>
-                            <li>Previous injuries</li>
-                            <li>Sensitive areas</li>
-                            <li>Anxiety or behavioral concerns</li>
-                            <li>Previous grooming difficulties</li>
-                            <li>Any other information affecting the appointment</li>
+                            <li>Existing health conditions or age-related mobility limits</li>
+                            <li>Known allergies or skin sensitivities</li>
+                            <li>Past grooming anxieties or behavioral concerns</li>
+                            <li>Sensitive areas requiring extra gentle handling</li>
                         </ul>
                     </article>
 
                     <article class="card value-card">
                         <h3>Rachel Moreno</h3>
-                        <p class="team-role">Owner & Lead Groomer</p>
-                        <p>Rachel oversees the salon and has worked with companion animals for more than ten years.</p>
-                        <p>Her grooming approach emphasizes patient handling, clear communication with owners, and creating a positive experience whenever possible.</p>
+                        <p class="team-role" style="font-weight: 600; color: var(--primary);">Lead Groomer & Salon Manager</p>
+                        <p>Rachel oversees the salon and has worked with companion animals for more than ten years. Her grooming approach emphasizes patient handling, clear communication with owners, and creating a positive experience whenever possible.</p>
                     </article>
 
                     <article class="card value-card">
                         <h3>Jenna Walsh</h3>
-                        <p class="team-role">Pet Groomer</p>
-                        <p>Jenna works primarily with dogs and specializes in routine coat maintenance, full grooming appointments, and puppy introductions.</p>
-                        <p>She enjoys helping new pet owners establish manageable grooming routines.</p>
+                        <p class="team-role" style="font-weight: 600; color: var(--primary);">Stylist & Feline Specialist</p>
+                        <p>Jenna works primarily with dogs and cats, specializing in routine coat maintenance, full grooming appointments, puppy introductions, and feline care.</p>
                     </article>
 
                     <article class="card value-card">
                         <h3>Aaron Lee</h3>
-                        <p class="team-role">Grooming Assistant</p>
-                        <p>Aaron supports bathing, drying, sanitation, salon preparation, and pet comfort.</p>
-                        <p>He also assists groomers with maintaining a clean and organized work environment.</p>
+                        <p class="team-role" style="font-weight: 600; color: var(--primary);">Bathing & Salon Assistant</p>
+                        <p>Aaron supports bathing, drying, sanitation, salon preparation, and pet comfort, ensuring all work areas remain clean and welcoming.</p>
                     </article>
                 </div>
             </div>
@@ -143,7 +144,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="pet-care.html">Pet Care</a></li>
-                    <li><a href="Book.html">Book an Appointment</a></li>
+                    <li><a href="contact.html">Appointment Inquiry</a></li>
                 </ul>
             </div>
             <div class="footer-col">
