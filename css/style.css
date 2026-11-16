@@ -931,3 +931,79 @@ h2 {
   color: var(--primary);
   fill: currentColor;
 }
+/* What to Expect Section */
+#what-to-expect {
+  background-color: var(--bg-main);
+  background-image: 
+    linear-gradient(rgba(248, 246, 240, 0.85), rgba(248, 246, 240, 0.85)),
+    url("https://img.magnific.com/free-vector/hand-drawn-pet-grooming-pattern_23-2150051031.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: 500px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+/* Featured Grooming Services Section */
+.section-alt {
+  background-color: var(--bg-alt);
+  background-image: 
+    linear-gradient(rgba(238, 242, 238, 0.85), rgba(238, 242, 238, 0.85)),
+    url("https://img.magnific.com/free-vector/hand-drawn-pet-grooming-pattern_23-2150051031.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: 500px;
+  background-position: center;
+  background-repeat: repeat;
+}
+.badge {
+  display: inline-block;
+  background-color: var(--secondary); /* Uses your rich sage green, or change to var(--accent) for blue */
+  color: #FFFFFF;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle lift */
+  border: none;
+}
+/* Clean up Value Cards (Left-align text and lists for readability) */
+.value-card {
+  text-align: left; /* Left-aligns text so lists and paragraphs look organized */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.value-card h3 {
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.value-card ul {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem; /* Gives breathing room for bullet points */
+  color: var(--text);
+}
+
+.value-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Optional: Dedicated Team Section Grid for the staff profiles */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
